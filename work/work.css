@@ -24,7 +24,6 @@ body {
     position: relative;
 }
 
-
 .header {
     width: 100%;
     display: flex;
@@ -77,12 +76,12 @@ a {
     text-align: center;
 }
 
-
 .work-title {
     font-size: 2.8rem;
-    color: #333333;
+    color: #222222;
     margin: 0 0 15px 0;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .work-subtitle {
@@ -92,14 +91,12 @@ a {
     line-height: 1.5;
 }
 
-
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     margin-bottom: 60px;
 }
-
 
 .project-card {
     background-color: rgba(255, 255, 255, 0.9);
@@ -128,10 +125,11 @@ a {
 }
 
 .project-name {
-    font-size: 1.5rem;
-    color: #333333;
+    font-size: 1.6rem;
+    color: #222222;
     margin: 0 0 8px 0;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .project-date {
@@ -148,7 +146,6 @@ a {
     flex-grow: 1;
 }
 
-
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -164,7 +161,6 @@ a {
     font-size: 0.9rem;
     font-weight: 500;
 }
-
 
 .project-links {
     margin-top: auto;
@@ -197,9 +193,11 @@ a {
 }
 
 .coming-soon h3 {
-    font-size: 1.5rem;
-    color: #333333;
+    font-size: 1.6rem;
+    color: #222222;
     margin: 0 0 10px 0;
+    font-weight: 700;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .coming-soon p {
@@ -207,7 +205,6 @@ a {
     color: #555555;
     margin: 0;
 }
-
 
 @media (max-width: 768px) {
     .work-container {
@@ -251,7 +248,11 @@ a {
     }
 
     .project-name {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
+    }
+
+    .coming-soon h3 {
+        font-size: 1.4rem;
     }
 
     .project-desc {
