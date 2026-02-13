@@ -24,6 +24,7 @@ body {
     position: relative;
 }
 
+/* Header Styles - Standardized */
 .header {
     width: 100%;
     display: flex;
@@ -31,6 +32,11 @@ body {
     align-items: center;
     padding: 12px 16px;
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
 }
 
 .name {
@@ -50,18 +56,24 @@ body {
     margin: 0;
     font-size: 18px;
     color: #333333;
-    cursor: pointer;
 }
 
-a {
+.nav-item a {
     text-decoration: none;
     color: inherit;
 }
 
-.nav-right a:hover {
+.nav-item a:hover {
     text-decoration: underline;
 }
 
+.active a {
+    font-weight: bold;
+    color: #222222;
+    border-bottom: 2px solid #ff9e6d;
+}
+
+/* Work Container */
 .work-container {
     flex: 1;
     width: 100%;
@@ -206,6 +218,7 @@ a {
     margin: 0;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
     .work-container {
         padding: 70px 15px 30px;
@@ -265,5 +278,9 @@ a {
 
     .nav-item {
         font-size: 16px;
+    }
+
+    .name {
+        font-size: 22px;
     }
 }

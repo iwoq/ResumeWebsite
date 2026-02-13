@@ -31,6 +31,17 @@ body {
     align-items: center;
     padding: 12px 16px;
     margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.name {
+    margin: 0;
+    font-size: 26px;
+    color: #333333;
 }
 
 .nav-right {
@@ -43,31 +54,16 @@ body {
 .nav-item {
     margin: 0;
     font-size: 18px;
+    color: #333333;
 }
 
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-}
-
-.nav-right a,
-.nav-right a:visited {
-    color: inherit;
+.nav-item a {
     text-decoration: none;
+    color: inherit;
 }
 
-.nav-right a:hover,
-.nav-right a:active {
-    color: #222222;
+.nav-item a:hover {
     text-decoration: underline;
-}
-
-.nav-right a:focus {
-    outline: 2px solid rgba(0, 0, 0, 0.12);
-    outline-offset: 2px;
 }
 
 .active a {
@@ -75,7 +71,6 @@ body {
     color: #222222;
     border-bottom: 2px solid #ff9e6d;
 }
-
 
 .resume-container {
     width: 100%;
@@ -95,18 +90,15 @@ body {
     backdrop-filter: blur(5px);
 }
 
-
 .resume-left {
     flex: 1;
     min-width: 300px;
 }
 
-
 .resume-right {
     flex: 2;
     min-width: 300px;
 }
-
 
 .resume-section {
     margin-bottom: 40px;
@@ -120,7 +112,6 @@ body {
     border-bottom: 2px solid #ff9e6d;
     font-weight: 600;
 }
-
 
 .contact-section {
     background-color: rgba(255, 255, 255, 0.95);
@@ -144,7 +135,6 @@ body {
     margin-right: 15px;
     font-size: 1.2rem;
 }
-
 
 .education-item {
     margin-bottom: 25px;
@@ -217,7 +207,6 @@ body {
     margin: 0;
 }
 
-
 .project-item {
     margin-bottom: 30px;
     padding-bottom: 30px;
@@ -251,7 +240,6 @@ body {
     font-size: 0.9rem;
     font-weight: 500;
 }
-
 
 .experience-item {
     margin-bottom: 30px;
@@ -295,7 +283,6 @@ body {
     top: -5px;
 }
 
-
 .download-section {
     margin-top: 40px;
     text-align: center;
@@ -323,7 +310,7 @@ body {
     text-decoration: none;
 }
 
-
+/* Responsive Header */
 @media (max-width: 768px) {
     .resume-content {
         padding: 30px 20px;
@@ -352,7 +339,6 @@ body {
 @media (max-width: 480px) {
     .resume-content {
         padding: 25px 15px;
-        margin: 0 10px;
     }
 
     .section-title {
@@ -380,6 +366,10 @@ body {
 
     .nav-item {
         font-size: 16px;
+    }
+
+    .name {
+        font-size: 22px;
     }
 
     .download-btn {
